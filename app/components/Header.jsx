@@ -5,7 +5,8 @@ import { Github, Search } from 'lucide-react'
 
 const Header = () => {
     return (
-        <div className='p-4 shadow-sm flex justify-between'>
+        <div className='p-4 flex justify-between items-center 
+                        bg-transparent backdrop-blur-sm fixed top-0 left-0 w-full z-50'>
             <div className='flex items-center gap-8'>
                 <div className='flex items-center gap-2'>
                     <Github className='h-7 w-7' />
@@ -20,7 +21,11 @@ const Header = () => {
             <div className='flex gap-4 items-center'>
                 <div className='md:flex gap-2 items-center border rounded-full p-2 px-4 hidden'>
                     <Search className='h-5 w-5' />
-                    <input type='text' placeholder='Search...' className='outline-none' />
+                    <input
+                        type='text'
+                        placeholder='Search...'
+                        className='outline-none bg-transparent placeholder-gray-400'
+                    />
                 </div>
                 <div className='flex gap-4 items-center'>
                     <Button variant='outlined' color='primary'>sign in</Button>
