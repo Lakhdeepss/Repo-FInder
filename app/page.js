@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Header from './components/Header'
+
 import LandingPage_view from './components/LandingPage_view'
 
 const page = () => {

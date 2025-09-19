@@ -68,10 +68,7 @@ const Header = () => {
                         />
                     </div>
 
-                    {/* Sign in Button */}
-                    <Button variant="contained" color="primary">
-                        Sign In
-                    </Button>
+
                 </div>
             )}
         </header>
