@@ -2,8 +2,10 @@
 import Image from 'next/image'
 import React from 'react'
 
+
 const LandingPage_view = () => {
     return (
+
         <div className='relative h-screen overflow-x-hidden'>
             <div className='relative z-20 flex justify-center items-center h-full'>
                 <Image src="/mona-hubot-ce77f3cb7f46.webp" alt="Description" width={500} height={500} />
