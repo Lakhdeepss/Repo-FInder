@@ -26,7 +26,7 @@ const Header = () => {
             {/* Right Section */}
             <div className="flex gap-4 items-center">
                 {/* Desktop Search */}
-                <div className="hidden md:flex gap-2 items-center border rounded-full p-2 px-4 bg-white/10 backdrop-blur-md">
+                <div className="hidden md:flex gap-2 items-center border rounded-full p-2 px-4 bg-white/10 backdrop-blur-2xl">
                     <Search className="h-5 w-5" />
                     <input
                         type="text"
@@ -53,13 +53,15 @@ const Header = () => {
 
             {/* Mobile Dropdown Menu */}
             {menuOpen && (
-                <div className="absolute top-full left-0 right-6 bg-white/10 backdrop-blur-lg shadow-lg flex flex-col gap-4 p-6 md:hidden rounded-b-2xl animate-[slideDown_0.3s_ease-out]">
+                <div className="absolute top-full left-0 right-6 bg-white/10 backdrop-blur-[500px] border border-white/20
+                  shadow-[0_4px_30px_rgba(0,0,0,0.1)] flex flex-col gap-4 p-6 md:hidden rounded-b-2xl 
+                  animate-[slideDown_0.3s_ease-out]">
                     <h2 className="hover:scale-105 hover:text-primary cursor-pointer transition">Categories</h2>
                     <h2 className="hover:scale-105 hover:text-primary cursor-pointer transition">Trending</h2>
                     <h2 className="hover:scale-105 hover:text-primary cursor-pointer transition">Submit</h2>
 
                     {/* Search inside dropdown */}
-                    <div className="flex gap-2 items-center border rounded-full p-2 px-4 bg-white/20">
+                    <div className="flex gap-2 items-center border rounded-full p-2 px-4 bg-white/30 backdrop-blur-xl">
                         <Search className="h-5 w-5" />
                         <input
                             type="text"
@@ -67,10 +69,9 @@ const Header = () => {
                             className="outline-none bg-transparent text-white placeholder-gray-200 flex-1"
                         />
                     </div>
-
-
                 </div>
             )}
+
         </header>
     )
 }
